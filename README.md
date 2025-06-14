@@ -120,10 +120,43 @@ Dashboard ini dikembangkan untuk membantu manajemen Jaya Jaya Institut dalam mem
     Dashboard ini bertujuan untuk menyoroti bagaimana latar belakang keluarga, baik dari sisi pendidikan maupun pekerjaan, turut berperan dalam risiko dropout mahasiswa.
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
-```
+Sistem Machine Learning dapat dibuka melalui link : [Streamli](https://student-performance-fayrafida.streamlit.app/)
 
+### Persiapan Awal
+1. Download file project dalam bentuk `.zip`.
+2. Ekstrak file zip ke folder yang diinginkan.
+
+### Setup Menggunakan Anaconda
+1. Buka Anaconda Prompt.
+2. Arahkan ke folder project hasil ekstrak:
+   ```bash
+   cd path/ke/folder/project
+   ```
+3. Buat environment baru dan install dependencies:
+	```bash
+	conda create -n dashboard-env --file requirements.txt
+	conda activate dashboard-env
+	```
+### Setup Menggunakan Shell/Terminal (tanpa Anaconda)
+
+1.  Buka terminal atau command prompt.
+2.  Arahkan ke folder project hasil ekstrak:
+	```bash
+	cd path/ke/folder/project
+	```
+3. Buat virtual environment dan install dependencies:
+	```bash
+	python -m venv venv
+	source venv/bin/activate   # Linux/MacOS
+	venv\Scripts\activate      # Windows
+	pip install -r requirements.txt
+	```
+### Menjalankan Sistem 
+
+Jalankan perintah berikut di terminal:
+```bash
+streamlit run dashboard.py
 ```
 
 ## Conclusion
